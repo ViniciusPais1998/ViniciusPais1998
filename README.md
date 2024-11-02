@@ -1,4 +1,4 @@
-## Hi there my name is Vinicius, here you will see all my development. 👋
+## Hi there my name is Vinicius, i am Brazilian and here you will see all my development. 👋
 
 <!--
 **ViniciusPais1998/ViniciusPais1998** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
