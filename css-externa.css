@@ -1,0 +1,29 @@
+.elemento-com-borda{
+	border: 5px solid #ffcc00;
+	padding: 10px;
+}
+
+.cascata{
+	background-color:pink;
+}
+.cascata2{
+	background-color:blue;
+}
+#para2{
+	background-color: yellow;
+}
+
+.gradient{
+	font-weight:bold;
+	font-size:4rem;
+	width:400px;
+	height:300px;
+	background:linear-gradient(purple,black);
+	margin:20px 30px;
+}
+.cascata3{
+	background-color: black
+}
+#para3{
+	color:white
+}
