@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@font-face{
+				font-family:"Edu";
+				src:url("EduAUVICWANTPre-VariableFont_wght.woff2")
+					format("woff2");
+				font-weight:bold;
+				font-style:normal;
+				}
+			@font-face{
+				font-family:"Doto";
+				src:url("Doto-VariableFont_ROND,wght.woff2")
+					format("woff2");
+				font-weight:bold;
+				font-style:normal;
+				}
+			#fonte1{
+				font-family:Doto;
+				font-size:25px;
+				color:black;
+				padding:5px;
+				}
+			#fonte2{
+				background:violet;
+				margin:0 auto;
+				font-family:Edu;
+				font-size:25px;
+				color:black;
+				}
+			.texto-destaque{
+				font-weight:bold;
+				font-size:25px;
+				}
+			ol li{
+				list-style:none;
+				display:normal;
+				}
+			#rgb{
+				background-color:rgb(255,0,51);
+				}
+			#rgba{
+				background-color:rgba(255,0,51,40%);
+				}
+			#hsl{
+				background-color:hsl(0,100%,50%)
+				}
+			#hsla{
+				background-color:hsla(0,100%,50%,40%);
+				}
+			#link:hover{
+				color:grey;
+				}
+			#container{
+				color:red;
+				padding:15px;
+				background-color:yellow;
+				border:15px solid green;
+				margin-top:50px;
+				}
+			#container-texto:first-line{
+				color:green;
+				text-transform:uppercase;
+				}
+			#box-model{
+				width:400px;
+				height:200px;
+				margin:50px;
+				padding:150px;
+				border:50px solid blue;
+				text-align:center;
+				}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<h1 class="texto-destaque">
+		Exemplos de utilização da função RGB, RGBA(CSS3), HSL e HSLA(CSS3)
+		</h1>
+			<div id="fonte1">
+				<div id="rgb">
+				RGB - Red, Green e Blue
+				</div>
+			
+				<div id="rgba">
+				RGBA
+				</div>
+			
+				<div id="hsl">
+				HSL - Hue, Saturation e Lightness
+				</div>
+			
+				<div id="hsla">
+				HSLA
+				</div>
+			</div>
+			
+			<div id="fonte2">
+				<h2>Exemplo de fontes</h2>
+					<p class="texto-destaque">Web fontes em uma lista não ordenada.</p>
+		
+				<ol>
+					<li id="fonte2">Fonte Edu</li>
+					<li id="fonte1">Fonte Doto</li>
+					<li id="fonte2">Fonte Edu</li>
+					<li id="fonte1">Fonte Doto</li>
+				</ol>
+			</div>
+		
+		<div id="container">
+			<h3>Pseudo-Classes</h3>
+				<a href="#" id="link">Clique</a>
+			<h3>Pseudo-Elementos</h3>
+				<p id="container-texto">
+				Este é um exemplo de como utilizar a Pseudo-Elementos em um texto,
+				onde apenas a primeira linha neste caso fica maiuscula e
+				com texto verde.
+				A partir da linha segunda linha as letras não estão mais maiusculas
+				e a cor do texto deixa de ser verde.
+				</p>
+		</div>
+		
+		<div id="box-model">
+			<h4>Box Model</h4>
+		
+	</body>
+</html>
