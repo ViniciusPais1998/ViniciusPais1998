@@ -1,0 +1,140 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Posicionamento de elementos em CSS</title>
+<style type="text/css">
+	.body{
+		font-size:2rem;
+		}
+	
+	/*Todos os elementos em uma única linha*/
+	#container-flexbox-row{
+		display:flex;
+		flex-direction:row;
+		}
+	
+	#container-flexbox-row div,
+	#container-flexbox-col div{
+		width:100%;
+		height:50px;
+		background-color:yellow;
+		}
+	
+	/*Todos os elementos em uma única coluna*/
+	#container-flexbox-col{
+		display:flex;
+		flex-direction:column;
+		}
+	
+	#container-grid{
+		display:grid;
+		grid-template-columns:100px 100px 100px 100px 100px 100px;
+		/*grid-template-rows:100px 200px 10px 100px 200px 10px;*/
+		color;#fff;
+		}
+	
+	#container-grid div{
+		border:1px solid #000;
+		background:#336666;
+		}
+	
+	/*Posição absoluta - em relação ao elemento anterior*/
+	#container-absolute{
+		background-color:rgb(200,100,150);
+		position:absolute;
+		top:100px;
+		right:10px;
+		width:200px;
+		height:100px;
+		border:3px solid #000;
+		color:black;
+		}
+		
+	/*Posição estática - posição natural*/
+	#container-static{
+		border:3px solid yellow;
+		width:300px;
+		background:rgb(50,2,13);
+		}
+	
+	/*Posição relativa - em relação ao seu posicionamento normal*/
+	#container-relative{
+		position:relative;
+		left:300px;
+		border:3px solid red;
+		width:300px;
+		background:rgb(52,32,105);
+		}
+		
+	/*Posição fixa - em relação a janela*/
+	#container-fixed{
+		position:fixed;
+		bottom:0;
+		right:0;
+		width:300px;
+		border:3px solid black;
+		background:rgb(150,30,120);
+		}
+		
+	#container-static div,
+	#container-relative div,
+	#container-fixed div{
+		color:#fff;
+		}
+</style>
+</head>
+<body>
+	<h1>Flexbox Row</h1>
+		<div id="container-flexbox-row">
+			<div>Flexbox1</div>
+			<div>Flexbox2</div>
+			<div>Flexbox3</div>
+		</div>
+		
+	<h1>Flexbox Col</h1>
+		<div id="container-flexbox-col">
+			<div>Flexbox1</div>
+			<div>Flexbox2</div>
+			<div>Flexbox3</div>
+		</div>
+		
+	<h1>Grid</h1>
+		<div id="container-grid">
+			<div>Col1</div>
+			<div>Col2</div>
+			<div>Col3</div>
+			<div>Col4</div>
+			<div>Col5</div>
+		</div>
+		
+	<h1>Posição Absoluta</h1>
+		<div id="container-absolute">
+			<div>
+			Absolute:Posicionado em relação ao elemento
+			anterior ou, na ausência desse, em relação à Tag body.
+			</div>
+		</div>
+	<h1>Posição Estática</h1>
+		<div id="container-static">
+			<div>
+			Static:Posicionamento natural do elemento.
+			</div>
+		</div>
+		
+	<h1>Posição Relativa</h1>
+		<div id="container-relative">
+			<div>
+			Relative:Posicionado em relação a sua posição natural
+			</div>
+		</div>
+		
+	<h1>Posição Fixa</h1>
+		<div id="container-fixed">
+			<div>
+			Fixed:Posicionado de forma fixa em relação a janela
+			</div>
+		</div>
+	
+</body>
+</html>
